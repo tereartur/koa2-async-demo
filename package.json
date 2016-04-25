@@ -1,0 +1,47 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src test",
+    "start": "gulp",
+    "test": "ava 'src/tests/**/*.js'"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.2",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "bluebird": "^3.3.5",
+    "eslint": "^2.8.0",
+    "eslint-config-airbnb": "^7.0.0",
+    "eslint-plugin-jsx-a11y": "^0.6.2",
+    "eslint-plugin-react": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.0.0",
+    "koa-mount": "^1.3.0",
+    "koa-router": "^7.0.1",
+    "mongoose": "^4.4.12",
+    "pre-commit": "^1.1.2",
+    "supertest": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^5.0.1"
+  }
+}

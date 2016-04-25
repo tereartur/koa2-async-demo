@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "max-len": [1, 180, 4],
+    "arrow-body-style": [0],
+    "object-curly-spacing": [0, "never"],
+    "comma-dangle": [0, "never"],
+    "arrow-spacing":0,
+    "no-console":0,
+    "no-param-reassign": [0, { "props": false }]
+  }
+}
